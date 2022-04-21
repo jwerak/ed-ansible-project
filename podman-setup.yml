@@ -7,4 +7,4 @@
     - jwerak.podman
   
   roles:
-    - jwerak.podman.podman-setup
+    - jwerak.podman.podman_setup
