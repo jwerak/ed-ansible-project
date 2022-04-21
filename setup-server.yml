@@ -1,0 +1,9 @@
+---
+- name: Install and configure Podman on server
+  hosts: all
+  gather_facts: false
+  collections:
+    - jwerak.podman
+  
+  roles:
+    - jwerak.podman.podman-setup
