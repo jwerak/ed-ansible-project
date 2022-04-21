@@ -1,5 +1,5 @@
 ---
-- name: Install and configure Podman on server
+- name: Deploy Podman application
   hosts: all
   become: true
   gather_facts: false
@@ -13,3 +13,5 @@
 
   roles:
     - jwerak.podman.podman_app
+
+  # tasks:
