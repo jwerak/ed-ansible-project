@@ -1,6 +1,7 @@
 ---
 - name: Install and configure Podman on server
   hosts: all
+  become: true
   gather_facts: false
   collections:
     - jwerak.podman
