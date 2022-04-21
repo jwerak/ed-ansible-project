@@ -1,6 +1,5 @@
 ---
 collections:
 - name: jwerak.podman
-  version: main
   type: git
   source: https://github.com/jwerak/ansible-collection-podman.git
