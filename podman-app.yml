@@ -9,7 +9,7 @@
   vars:
     podman_app_env_vars:
       - name: ENVIRONMENT
-        value: "{{ environment }}"
+        value: "{{ environment_name }}"
 
   roles:
     - jwerak.podman.podman_app
