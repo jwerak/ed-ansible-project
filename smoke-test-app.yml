@@ -18,5 +18,5 @@
 
     - name: print message
       ansible.builtin.debug:
-        msg: "Application is listening on {{ inventory_hostname }}:{{ item }}"
+        msg: "Application is listening on {{ ansible_host }}:{{ item }}"
       loop: "{{ application_ports }}"
