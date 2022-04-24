@@ -10,6 +10,7 @@
     podman_app_env_vars:
       - name: ENVIRONMENT
         value: "{{ environment_name }}"
+    podman_app_container_image_tag: "{{ application_version }}"
 
   roles:
     - jwerak.podman.podman_app

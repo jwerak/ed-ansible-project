@@ -3,3 +3,5 @@ collections:
 - name: jwerak.podman
   type: git
   source: https://github.com/jwerak/ansible-collection-podman.git
+
+- name: containers.podman
