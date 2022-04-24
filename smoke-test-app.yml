@@ -15,3 +15,8 @@
         state: started
       delegate_to: localhost
       loop: "{{ application_ports }}"
+
+    - name: print message
+      ansible.builtin.debug:
+        msg: "Application is listening on {{ inventory_hostname }}:{{ item }}"
+      loop: "{{ application_ports }}"
