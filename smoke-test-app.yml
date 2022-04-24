@@ -1,0 +1,17 @@
+- name: Smoke test apllication deploy
+  hosts: all
+  gather_facts: false
+
+  vars:
+    application_ports: 
+      - 80
+
+  tasks:
+    - name: local machine can reach web ports
+      wait_for:
+        host: "{{ inventory_hostname }}"
+        port: "{{ item }}"
+        timeout: 5
+        state: started
+      delegate_to: localhost
+      loop: "{{ application_ports }}"
