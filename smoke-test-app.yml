@@ -9,7 +9,7 @@
   tasks:
     - name: local machine can reach web ports
       wait_for:
-        host: "{{ inventory_hostname }}"
+        host: "{{ ansible_host }}"
         port: "{{ item }}"
         timeout: 5
         state: started
