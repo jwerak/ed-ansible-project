@@ -1,6 +1,6 @@
 ---
 - name: Deploy Podman application
-  hosts: all
+  hosts: "{{ target_hosts | default('all')  }}"
   become: true
   gather_facts: false
   collections:
