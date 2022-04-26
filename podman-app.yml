@@ -11,6 +11,7 @@
       - name: ENVIRONMENT
         value: "{{ environment_name }}"
     podman_app_container_image_tag: "{{ application_version }}"
+    podman_app_service_name: "{{ edge_app_service_name }}"
 
   roles:
     - jwerak.podman.podman_app

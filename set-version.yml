@@ -1,7 +1,6 @@
 ---
 - name: Set Application version for Group
   hosts: localhost
-  become: true
   gather_facts: false
 
   vars:

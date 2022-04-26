@@ -1,0 +1,11 @@
+---
+- name: Base configuration for all servers
+  hosts: all
+  become: true
+  gather_facts: false
+  
+  tasks:
+    - name: Restart Edge Application
+      ansible.builtin.service:
+        name: "{{ edge_app_service_name }}"
+        state: restarted
